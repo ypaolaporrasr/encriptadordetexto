@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+
+:root {
+  --ff-protest: "Protest Riot", sans-serif;
+  --dark-gray: #2c444e;
+  --medium-yellow: #f5b400;
+  --yellow: #ffc801;
+  --gray: #a0a2a4;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--gray 80%);
+  font-family: var(--ff-protest);
+  margin:0px;
+}
+
+.containerMensaje {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+
+.header {
+  width: 100%;
+  margin: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.logoOne {
+  width: 8rem;
+  top: 2.4rem;
+  left: 1.6rem;
+}
+
+h1{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--white)
+}
+
+.form{
+  margin-bottom: 6.4rem;
+  padding: 4rem;
+  text-align: center;
+  background:var(--dark-gray);
+  border-radius: 4%;
+}
+
+.formTexto{
+  font-family: var(--ff-protest);
+  width: 34.3rem;
+  font-size: 2.4rem;
+  border: none;
+  padding: 1.6rem;
+  background-color: var(--medium-yellow);
+  resize: none;
+  caret-color: var(--blue);
+  display: none;
+  align-items: center;
+  margin: 0 auto 1.6rem;
+}
+
+.alert{
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--gray)
+}
+
+.formTexto::placeholder {
+  color: var(--dark-gray-300);
+  font-size: 2.4rem;
+  font-family: var(--ff-inter);
+}
+
+.formTexto:focus {
+  outline: 2px solid var(--dark-gray-300);
+}
+
+.columnaContenido {
+  display: flex;
+  margin: 6.1rem 1rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction:row;
+}
+
+.formEncriptador {
+  padding: 2rem;
+  text-align: center;
+  border-radius:5%;
+  background-color: var(--dark-gray);
+}
+
+.formSugerencia{
+  width: 34.3rem;
+  height: 1.6rem;
+  display: none;
+  align-items: center;
+  margin: 0 auto 1.6rem;
+}
+
+#mensaje {
+  font-family: var(--ff-protest);
+  height: 19rem;
+  font-size: 2.4rem;
+  padding: 1.6rem;
+  resize: none;
+  margin-bottom: 4rem;
+  caret-color: var(--yellow);
+  border-radius: 2%;
+}
+
+#mensaje::placeholder {
+  color: var(--blue);
+  font-size: 2.4rem;
+  font-family: var(--ff-protest);
+}
+
+.form__phrase:focus {
+  outline: 2px solid var(--medium-yellow);
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+}
+
+.btn {
+  width: 18rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1.6rem;
+  padding: 2.4rem;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btnEncriptar {
+  background-color: var(--yellow 30%);
+  color: var(--dark-blue);
+}
+
+.btnDesencriptar {
+  background-color: var(--medium-yellow);
+  color: var(--white);
+  border: 1px solid var(--medium-yellow);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.copyright {
+  color: var(--gray-300);
+  font-size: 1.5rem;
+  height: 3.0rem;
+  line-height: 2rem;
+}
+
+
+.linkRedes {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3.2rem;
+}
+
+a .bx {
+  font-size: 2.4rem;
+  color: var(--dark-gray);
+}
+
+/* section que contiene los dos divs que se mostraran dependiendo de la accion del usuario */
+.sectionDesencriptador {
+  background-color: var(--white);
+  border-radius: 3.2rem;
+  text-align: center;
+  box-shadow: 0 24px 32px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:4rem;
+}
+/* Mensaje que aparece en caso de que el usuario no ingrese un texto */
+.mensajeEncriptado {
+  width: 26.3rem;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.imagenDesencriptado {
+  width:100%;
+}
+
+.mensajeEncriptadoTitulo {
+  color: var(--gray);
+  font-size: 2.4rem;
+}
+
+.mensajeEncriptadoParrafo {
+  color: var(--gray);
+  font-size: 1.6rem;
+}
+
+/* Mensaje una vez encriptado */
+.resultadoDesencriptado {
+  width: 27.9rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding:2rem;
+}
+
+.textoEncriptado{
+  font-size: 2.4rem;
+  font-family: var(--ff-protest);
+  color: var(--dark-gray);
+  background-color: var(--white);
+  border: none;
+  resize: none;
+  padding: 1.6rem;
+  caret-color: var(--gray);
+  overflow-y: auto;
+}
+
+.btnCopiar {
+  width: 100%;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+}
+.btnCopiar:hover {
+  width: 100%;
+  background-color: var(--medium-yellow);
+  color: var(--dark-gray);
+  border: 1px solid var(--dark-gray);
+  font-weight:900;
+}
+.footer{
+  background-color: var(--gray);
+}
+@media (max-width: 768px) {
+  .header{
+    margin:0.5rem;
+  }
+  .columnaContenido {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .form{
+    padding:3rem;
+  }
+  #mensaje{ 
+    margin-bottom:0px;
+    width:90%;
+  }
+  .btn{
+    padding:1rem;
+  }
+  .resultadoDesencriptado{
+    width:auto;
+  }
+}

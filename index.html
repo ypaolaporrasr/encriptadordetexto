@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- titulo -->
+  <title>Encriptador de texto para Challenge Oracle por Paola Porras</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- titulo -->
+  <header class="header">
+    <img class="logoOne" src="img/one.png" alt="Logo de Alura">
+  </header>
+
+
+  <!-- campo para texto que se va a encriptar -->
+  <div class="columnaContenido">
+    <section class="sectionEncriptador">
+      <div>
+        <form placeholder="Diligencia tu mensaje aquí" class="form">
+          <h1>Bienvenido a tu encriptador de texto</h1>
+          <textarea id="mensaje" rows="4" required></textarea> <br>
+          <p class="alert">⚠️ Ingresa solo letras minúsculas y sin acentos</p>>
+
+    <section class="sectionDesencriptado"></section>
+      <!--Boton para encriptar-->
+      <div class="btnContainer">
+        <input class="btn btnEncriptar" id="btnEncriptar" type="button" value="Encriptar">
+        <!-- boton para desencriptar -->
+        <input class="btn btnDesencriptar" id="btnDesencriptar" type="button" value="Desencriptar">
+      </div>
+      </form>
+  </div>
+  </section>
+
+  <!-- Area para mostrar el texto encriptado/desencriptado -->
+  <section class="sectionDesencriptador">
+    <div class="mensajeEncriptado">
+      <img class="imagenDesencriptado" src="img/encriptado.jpg" alt="Muñeco Ilustración">
+    </div>
+
+    <div class="resultadoDesencriptado">
+      <textarea class="textoEncriptado" id="textoEncriptado" readonly></textarea>
+      <input class="btn btnCopiar" id="btnCopiar" type="button" value="Copiar">
+    </div>
+  </section>
+  </div>
+
+  <footer class="footer">
+    <p class="copyright">Hecho por Yenny Paola Porras <span class="heart">©️</span>2024</p>
+    <div class="linkRedes">
+      <a class="link" href="https://www.linkedin.com/in/ypaolaporrasr" target="_blank">
+        <i class='bx bxl-linkedin-square'></i>
+      </a>
+      <a class="link" href="https://github.com/ypaolaporrasr" target="_blank">
+        <i class='bx bxl-github'></i>
+      </a>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
